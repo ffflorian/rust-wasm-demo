@@ -1,7 +1,5 @@
 Cargo.lock
 node_modules
 npm-debug.log
-/site/*
-!/site/index.html
 target
 yarn.lock
