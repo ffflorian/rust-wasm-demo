@@ -1,0 +1,15 @@
+{
+  "author": "Florian Keller <github@floriankeller.de>",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "description": "",
+  "license": "MIT",
+  "name": "rust-wasm-demo",
+  "private": true,
+  "scripts": {
+    "start": "http-server site/ -o",
+    "install": "cargo build --target=wasm32-unknown-emscripten --release"
+  },
+  "version": "0.1.0"
+}
