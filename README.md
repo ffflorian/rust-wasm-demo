@@ -3,13 +3,19 @@
 Immediately see the result on the [GitHub page](https://ffflorian.github.io/rust-wasm-demo/site/).
 
 ## Building Prerequisites
-0. You need a browser that [supports WebAssembly](https://caniuse.com/#feat=wasm) (e.g. not Edge).
-1. Install [Node.js](https://nodejs.org/)
+0. You need a browser that [supports WebAssembly](https://caniuse.com/#feat=wasm) (e.g. not Edge or IE).
+1. Install [Node.js](https://nodejs.org/).
 2. Install [Emscripten](http://webassembly.org/getting-started/developers-guide/).
 3. Install [Rust](https://rustup.rs/).
 4. Install the WASM target for Rust:
 
     `rustup target add wasm32-unknown-emscripten`
+
+5. Clone this repository:
+
+    `git clone https://github.com/ffflorian/rust-wasm-demo.git`.
+
+6. In the cloned folder, run `npm install`.
 
 ## Building
 * On Unix-based systems, run `npm run build`.
