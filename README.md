@@ -3,6 +3,7 @@
 Immediately see the result on the [GitHub page](https://ffflorian.github.io/rust-wasm-demo/site/).
 
 ## Building Prerequisites
+0. You need a browser that [supports WebAssembly](https://caniuse.com/#feat=wasm) (e.g. not Edge).
 1. Install [Node.js](https://nodejs.org/)
 2. Install [Emscripten](http://webassembly.org/getting-started/developers-guide/).
 3. Install [Rust](https://rustup.rs/).

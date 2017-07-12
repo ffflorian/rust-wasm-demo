@@ -1,6 +1,41 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 100%;
+      }
+      #ribbon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+      }
+      #text {
+        padding: 50px;
+        width: 200px;
+        text-align: center;
+        font-size: 15pt;
+        margin: 100px auto;
+        border: 1px solid black;
+      }
+      #info {
+        text-align: center;
+        line-height: 15pt;
+        font-size: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://github.com/ffflorian/rust-wasm-demo">
+      <img id="ribbon" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+    </a>
+    <div id="text"></div>
+    <div id="info">
+      If you don't see any text within the black bordered box,<br />
+      you'll need to use a browser that <a href="https://caniuse.com/#feat=wasm">supports WebAssembly.</a>
+    </div>
     <script>
       function main() {
         const hello = Module.cwrap('hello', 'string', []);
@@ -12,27 +47,5 @@
       };
     </script>
     <script src="site.js"></script>
-    <style>
-      body {
-        font-family: sans-serif;
-      }
-      #ribbon {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 0;
-      }
-      #text {
-        margin-top: 50px;
-        text-align: center;
-        font-size: 15pt;
-      }
-    </style>
-  </head>
-  <body>
-    <a href="https://github.com/ffflorian/rust-wasm-demo">
-      <img id="ribbon" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
-    </a>
-    <div id="text"></div>
   </body>
 </html>
