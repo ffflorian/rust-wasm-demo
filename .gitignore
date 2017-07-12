@@ -1,7 +1,8 @@
-Cargo.lock
-node_modules
-npm-debug.log
+/node_modules
 /site/*
 !/site/index.html
-target
+/target
+Cargo.lock
+npm-debug.log
+package-lock.json
 yarn.lock
