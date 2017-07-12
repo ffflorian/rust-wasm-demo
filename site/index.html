@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <script>
-      var Module = {
-        wasmBinaryFile: "site.wasm",
+      const Module = {
         onRuntimeInitialized: main,
+        wasmBinaryFile: "site.wasm"
       };
       function main() {
         const hello = Module.cwrap('hello', 'string', []);
