@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <script>
-      const Module = {
-        onRuntimeInitialized: main,
-        wasmBinaryFile: "site.wasm"
-      };
       function main() {
         const hello = Module.cwrap('hello', 'string', []);
         document.getElementById('text').textContent = hello();
       }
+      var Module = {
+        onRuntimeInitialized: main,
+        wasmBinaryFile: 'site.wasm'
+      };
     </script>
     <script src="site.js"></script>
     <style>
