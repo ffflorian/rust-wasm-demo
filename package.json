@@ -8,8 +8,8 @@
   "name": "rust-wasm-demo",
   "private": true,
   "scripts": {
-    "start": "http-server site/ -o",
-    "install": "sh ./build.sh"
+    "start": "npm run build && http-server site/ -o",
+    "build": "sh ./build.sh"
   },
   "version": "0.1.0"
 }
